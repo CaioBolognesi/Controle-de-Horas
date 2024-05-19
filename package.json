@@ -1,18 +1,37 @@
 {
-  "name": "jetinho",
+  "name": "controle-de-horas",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Jetinho",
+  "main": "main.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "tsc",
+    "start": "tsc && electron-forge start",
+    "package": "tsc && electron-forge package",
+    "make": "tsc && electron-forge make"
   },
   "keywords": [],
-  "author": "",
+  "author": "Caio Marcelo",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
+    "electron-squirrel-startup": "^1.0.1",
     "express": "^4.19.2",
+    "shelljs": "^0.8.5",
     "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-rpm": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.4.0",
+    "@electron-forge/plugin-fuses": "^7.4.0",
+    "@electron/fuses": "^1.8.0",
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^4.17.21",
+    "electron": "^30.0.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   }
 }

@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
             days: formData.getAll('days')
         };
 
-        fetch('/submit', {
+        fetch('http://localhost:3000/submit', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
