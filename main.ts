@@ -17,6 +17,7 @@ const createWindow = () => {
     },
   });
   window.loadFile(__dirname + "/src/client/index.html");
+  window.setMenuBarVisibility(false);
 };
 
 electron.app.on("ready", () => {

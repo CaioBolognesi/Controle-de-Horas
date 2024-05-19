@@ -20,6 +20,7 @@ const createWindow = () => {
         },
     });
     window.loadFile(__dirname + "/src/client/index.html");
+    window.setMenuBarVisibility(false);
 };
 electron_1.default.app.on("ready", () => {
     createWindow();
